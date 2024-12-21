@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Local Christian Assembly London</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Latest Bootstrap 5 CSS -->
+  <title>Local Christian Assembly London</title>
+  
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
@@ -16,10 +18,10 @@
   <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body id="home" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-
+  
   <!-- Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
       <div class="container-fluid">
         <a class="navbar-brand" href="#home">
           <i class="fas fa-church"></i> LCA
@@ -34,558 +36,576 @@
             <li class="nav-item"><a class="nav-link" href="#services">WEEKLY SERVICES</a></li>
             <li class="nav-item"><a class="nav-link" href="#devotionals">DEVOTIONALS & SERMONS</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">CONTACT US</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">GALLERY</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-
-  <!-- Main Content -->
-  <main>
-    <!-- Hero/Home Section -->
-    <section class="hero-section position-relative section">
-      <div id="welcome-text-container" class="text-light text-center position-absolute">
-        <h1 id="welcome-text" class="display-4 fw-bold gradient-text"></h1>
+  
+  <!-- Hero Section -->
+  <section id="home" class="hero-section d-flex align-items-center justify-content-center section">
+    <div class="hero-content text-center">
+      <h1 id="welcome-text" class="display-4 fw-bold gradient-text"></h1>
+      <div id="content-container" class="mt-4 d-none">
+        <div class="bg-overlay p-4 rounded mb-3">
+          <h2 id="scripture-text" class="fw-bold mb-4">"Be still, and know that I am God" – Psalm 46:10</h2>
+        </div>
+        <div class="bg-overlay p-4 rounded">
+          <h3 id="typed-quotes" class="fst-italic"></h3>
+        </div>
       </div>
-      <div class="container text-center position-relative">
-        <div id="content-container" class="text-light d-none">
-          <div class="bg-overlay p-4 rounded mb-3">
-            <h2 id="scripture-text" class="fw-bold mb-4">"Be still, and know that I am God" – Psalm 46:10</h2>
+    </div>
+  </section>
+  
+  <!-- About Us Section -->
+  <section id="about" class="py-5 section">
+    <div class="container">
+      <h2 class="text-center mb-5">About Us</h2>
+      <div class="row gx-4">
+        <!-- William Marrion Branham Section -->
+        <div class="col-lg-6 hover-3d">
+          <div class="service-card p-4 shadow rounded">
+            <div class="bg-image mb-3" style="background-image: url('IMG/images.jpeg');"></div>
+            <div class="bg-overlay p-4">
+              <h3 class="mb-4">William Marrion Branham</h3>
+              <p>
+                William Marrion Branham (1909–1965) was a servant of God, called as a prophet to bring the End Time Message. His ministry was marked by divine healings, miracles, and a profound teaching ministry that unveiled the mysteries of the Bible.
+              </p>
+              <p>
+                Branham’s mission was to restore the hearts of believers to the apostolic faith and prepare the Bride of Christ for His imminent return. His teachings emphasize the simplicity of Christ and the return to the Word of God.
+              </p>
+            </div>
           </div>
-          <br />
-          <div class="bg-overlay p-4 rounded">
-            <h3 id="typed-quotes" class="fst-italic"></h3>
+        </div>
+  
+        <!-- Local Christian Assembly Section -->
+        <div class="col-lg-6 hover-3d">
+          <div class="service-card p-4 shadow rounded">
+            <div class="bg-image mb-3" style="background-image: url('IMG/Eef4bRyXsAEoBnr.jpg');"></div>
+            <div class="bg-overlay p-4">
+              <h3 class="mb-4">Local Christian Assembly (LCA) London</h3>
+              <p>
+                Local Christian Assembly (LCA) London is a fellowship dedicated to proclaiming the End Time Message brought by God through William Marrion Branham. Established in [YEAR], LCA serves as a spiritual home for believers seeking a deeper understanding of the Word of God.
+              </p>
+              <p>
+                The assembly is committed to nurturing believers, teaching the unadulterated Gospel, and preparing hearts for the Second Coming of Jesus Christ. We aim to provide a place of worship, spiritual growth, and fellowship for all.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="py-5 position-relative section">
-      <div class="container">
-        <h2 class="text-center mb-5">About Us</h2>
+  
+      <!-- Curious About the Message Section -->
+      <div class="curious-section mt-5 text-center">
+        <h3 class="mb-4">Curious About the Message?</h3>
+        <p class="mb-5">
+          Discover key revelations from the End Time Message that can help you understand God’s plan of redemption and prepare for His coming.
+        </p>
         <div class="row gx-4">
-          <!-- William Marrion Branham Section -->
-          <div class="col-lg-6 hover-3d">
-            <div class="service-card p-4 shadow rounded">
-              <div class="bg-image" style="background-image: url('IMG/images.jpeg');" aria-hidden="true"></div>
-              <div class="bg-overlay p-4">
-                <h3 class="mb-4">William Marrion Branham</h3>
-                <p>
-                  William Marrion Branham (1909–1965) was a servant of God, called as a prophet to bring the End Time Message. His ministry was marked by divine healings, miracles, and a profound teaching ministry that unveiled the mysteries of the Bible.
-                </p>
-                <p>
-                  Branham’s mission was to restore the hearts of believers to the apostolic faith and prepare the Bride of Christ for His imminent return. His teachings emphasize the simplicity of Christ and the return to the Word of God.
-                </p>
+          <div class="col-md-3 col-sm-6 mb-4 hover-3d">
+            <div class="card h-100 service-card p-3">
+              <div class="card-body text-center">
+                <h5 class="card-title">Garden of Eden</h5>
+                <p class="card-text">What really happened in the Garden of Eden?</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edenModal">Learn More</button>
               </div>
             </div>
           </div>
-
-          <!-- Local Christian Assembly Section -->
-          <div class="col-lg-6 hover-3d">
-            <div class="service-card p-4 shadow rounded">
-              <div class="bg-image" style="background-image: url('IMG/Eef4bRyXsAEoBnr.jpg');" aria-hidden="true"></div>
-              <div class="bg-overlay p-4">
-                <h3 class="mb-4">Local Christian Assembly (LCA) London</h3>
-                <p>
-                  Local Christian Assembly (LCA) London is a fellowship dedicated to proclaiming the End Time Message brought by God through William Marrion Branham. Established in [YEAR], LCA serves as a spiritual home for believers seeking a deeper understanding of the Word of God.
-                </p>
-                <p>
-                  The assembly is committed to nurturing believers, teaching the unadulterated Gospel, and preparing hearts for the Second Coming of Jesus Christ. We aim to provide a place of worship, spiritual growth, and fellowship for all.
-                </p>
+          <div class="col-md-3 col-sm-6 mb-4 hover-3d">
+            <div class="card h-100 service-card p-3">
+              <div class="card-body text-center">
+                <h5 class="card-title">First Exodus</h5>
+                <p class="card-text">God's deliverance of Israel through Moses.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#firstExodusModal">Learn More</button>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- Curious About the Message Section -->
-        <div class="curious-section mt-5 text-center">
-          <h3 class="mb-4">Curious About the Message?</h3>
-          <p class="mb-5">
-            Discover key revelations from the End Time Message that can help you understand God’s plan of redemption and prepare for His coming.
-          </p>
-          <div class="row gx-4">
-            <div class="col-md-3 hover-3d">
-              <div class="card h-100">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Garden of Eden</h5>
-                  <p class="card-text">What really happened in the Garden of Eden?</p>
-                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edenModal">Learn More</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 hover-3d">
-              <div class="card h-100">
-                <div class="card-body text-center">
-                  <h5 class="card-title">First Exodus</h5>
-                  <p class="card-text">God's deliverance of Israel through Moses.</p>
-                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#firstExodusModal">Learn More</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 hover-3d">
-              <div class="card h-100">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Second Exodus</h5>
-                  <p class="card-text">Christ delivering His Bride from legalism.</p>
-                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#secondExodusModal">Learn More</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 hover-3d">
-              <div class="card h-100">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Third Exodus</h5>
-                  <p class="card-text">The Bride's calling to the Word of God.</p>
-                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thirdExodusModal">Learn More</button>
-                </div>
+          <div class="col-md-3 col-sm-6 mb-4 hover-3d">
+            <div class="card h-100 service-card p-3">
+              <div class="card-body text-center">
+                <h5 class="card-title">Second Exodus</h5>
+                <p class="card-text">Christ delivering His Bride from legalism.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#secondExodusModal">Learn More</button>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Modals for "Curious About the Message" -->
-    <!-- Garden of Eden Modal -->
-    <div class="modal fade" id="edenModal" tabindex="-1" aria-labelledby="edenModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="edenModalLabel">What Happened in the Garden of Eden?</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            William Marrion Branham taught that the events in the Garden of Eden reveal the origin of sin, the fall of man, and the promise of redemption. He emphasized the serpent seed doctrine, highlighting the deception of Eve and its consequences on humanity.
+          <div class="col-md-3 col-sm-6 mb-4 hover-3d">
+            <div class="card h-100 service-card p-3">
+              <div class="card-body text-center">
+                <h5 class="card-title">Third Exodus</h5>
+                <p class="card-text">The Bride's calling to the Word of God.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thirdExodusModal">Learn More</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </section>  
+  
+  <!-- Modals for "Curious About the Message" -->
+  <!-- Garden of Eden Modal -->
+  <div class="modal fade" id="edenModal" tabindex="-1" aria-labelledby="edenModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="edenModalLabel">What Happened in the Garden of Eden?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          William Marrion Branham taught that the events in the Garden of Eden reveal the origin of sin, the fall of man, and the promise of redemption. He emphasized the serpent seed doctrine, highlighting the deception of Eve and its consequences on humanity.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- First Exodus Modal -->
+  <div class="modal fade" id="firstExodusModal" tabindex="-1" aria-labelledby="firstExodusModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="firstExodusModalLabel">The First Exodus</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          The First Exodus refers to God's deliverance of Israel from Egyptian bondage through Moses. This foreshadowed Christ's ultimate deliverance of His people from sin.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Exodus Modal -->
+  <div class="modal fade" id="secondExodusModal" tabindex="-1" aria-labelledby="secondExodusModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="secondExodusModalLabel">The Second Exodus</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          The Second Exodus refers to Christ’s deliverance of His Bride from the bondage of denominational systems and legalism, calling her back to the pure Word of God. Just as Moses led the Israelites out of Egypt, Jesus Christ leads His Bride into spiritual freedom.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Third Exodus Modal -->
+  <div class="modal fade" id="thirdExodusModal" tabindex="-1" aria-labelledby="thirdExodusModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="thirdExodusModalLabel">The Third Exodus</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          The Third Exodus is the calling of the Bride of Christ out of worldly systems and into the fullness of the revealed Word. It signifies the spiritual journey of believers preparing for the Rapture through the End Time Message.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Rapture Modal -->
+  <div class="modal fade" id="raptureModal" tabindex="-1" aria-labelledby="raptureModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="raptureModalLabel">The Rapture</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          The Rapture is the catching away of the Bride of Christ to meet the Lord in the air. This event fulfills the promise of 1 Thessalonians 4:16-17 and signifies the culmination of the Bride’s journey in the End Time Message.
+        </div>
+      </div>
+    </div>
+  </div>  
 
-    <!-- First Exodus Modal -->
-    <div class="modal fade" id="firstExodusModal" tabindex="-1" aria-labelledby="firstExodusModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="firstExodusModalLabel">The First Exodus</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <!-- Weekly Services Section -->
+  <section id="services" class="py-5 section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Weekly Services</h2>
+  
+      <!-- Weekly Services Grid -->
+      <div class="row text-center gx-4 gy-5">
+        <!-- Sunday Worship -->
+        <div class="col-lg-4 col-md-6 hover-3d">
+          <div class="service-card p-4 shadow rounded">
+            <div class="service-icon mb-3">
+              <i class="bi bi-sun-fill text-warning fs-1"></i>
+            </div>
+            <h5 class="mb-3">Sunday Worship</h5>
+            <p><strong>Sunday School:</strong> 10:00 AM - 11:00 AM</p>
+            <p><strong>Main Service:</strong> 11:00 AM - 1:00 PM</p>
           </div>
-          <div class="modal-body">
-            The First Exodus refers to God's deliverance of Israel from Egyptian bondage through Moses. This foreshadowed Christ's ultimate deliverance of His people from sin.
+        </div>
+  
+        <!-- Bible Study -->
+        <div class="col-lg-4 col-md-6 hover-3d">
+          <div class="service-card p-4 shadow rounded">
+            <div class="service-icon mb-3">
+              <i class="bi bi-book-fill text-primary fs-1"></i>
+            </div>
+            <h5 class="mb-3">Bible Study</h5>
+            <p>Wednesday | 8:00 PM - 10:00 PM</p>
+          </div>
+        </div>
+  
+        <!-- Prayer Meeting -->
+        <div class="col-lg-4 col-md-6 hover-3d">
+          <div class="service-card p-4 shadow rounded">
+            <div class="service-icon mb-3">
+              <span style="font-size: 2.5rem;">🙏</span> <!-- Praying hands emoji -->
+            </div>
+            <h5 class="mb-3">Prayer Meeting</h5>
+            <p>Friday | 7:00 PM - 8:30 PM</p>
+          </div>
+        </div>  
+      </div>
+  
+      <hr class="my-5">
+  
+      <!-- Upcoming Events -->
+      <h3 class="text-center mb-4">Upcoming Events</h3>
+      <p class="text-center mb-5">Don't miss these special moments of worship and fellowship.</p>
+      <div class="row g-4 justify-content-center">
+        <!-- Youth Fellowship Night -->
+        <div class="col-lg-4 col-md-6 hover-3d">
+          <div class="event-card card h-100 shadow">
+            <img src="IMG/dnk-photo-PdXqqLO6jtw-unsplash.jpg" class="card-img-top rounded-top" alt="Youth Fellowship" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Youth Fellowship Night</h5>
+              <p class="card-text"><strong>Date:</strong> Saturday, March 15, 2024</p>
+              <p class="card-text"><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
+              <p>A special evening for young believers to worship, connect, and grow.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Easter Sunday Celebration -->
+        <div class="col-lg-4 col-md-6 hover-3d">
+          <div class="event-card card h-100 shadow">
+            <img src="IMG/neal-e-johnson-oQC81OHcl4Q-unsplash.jpg" class="card-img-top rounded-top" alt="Easter Celebration" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Easter Sunday Celebration</h5>
+              <p class="card-text"><strong>Date:</strong> Sunday, March 31, 2024</p>
+              <p class="card-text"><strong>Time:</strong> 10:00 AM - 1:00 PM</p>
+              <p>Celebrate the resurrection of Christ with joyful worship and fellowship.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Cross-Over Night -->
+        <div class="col-lg-4 col-md-6 hover-3d">
+          <div class="event-card card h-100 shadow">
+            <img src="IMG/priscilla-du-preez-A5ORfo8CM1E-unsplash.jpg" class="card-img-top rounded-top" alt="Cross Over Night" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Cross-Over Night</h5>
+              <p class="card-text"><strong>Date:</strong> Tuesday, December 31, 2024</p>
+              <p class="card-text"><strong>Time:</strong> 10:00 PM - 12:30 AM</p>
+              <p>Welcome the New Year with thanksgiving, worship, and prayers.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Second Exodus Modal -->
-    <div class="modal fade" id="secondExodusModal" tabindex="-1" aria-labelledby="secondExodusModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="secondExodusModalLabel">The Second Exodus</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </section>
+  
+  <!-- Devotionals and Sermons Section -->
+  <section id="devotionals" class="py-5 section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Devotionals & Sermons</h2>
+  
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <!-- Devotionals Carousel -->
+          <h3 class="text-center mb-4">Devotionals</h3>
+          <div id="devotionalsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Devotional 1 -->
+              <div class="carousel-item active">
+                <div class="card h-100 p-3 text-center">
+                  <img src="IMG/dnk-photo-PdXqqLO6jtw-unsplash.jpg" class="card-img-top rounded" alt="Devotional 1" loading="lazy">
+                  <div class="card-body">
+                    <h5 class="card-title">"The Power of Faith"</h5>
+                    <p><strong>Verse:</strong> Hebrews 11:1</p>
+                    <p class="card-text">Faith is the substance of things hoped for, the evidence of things not seen.</p>
+                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#devotionalModal">Read Full</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Devotional 2 -->
+              <div class="carousel-item">
+                <div class="card h-100 p-3 text-center">
+                  <img src="IMG/neal-e-johnson-oQC81OHcl4Q-unsplash.jpg" class="card-img-top rounded" alt="Devotional 2" loading="lazy">
+                  <div class="card-body">
+                    <h5 class="card-title">"Walking in Faith"</h5>
+                    <p><strong>Verse:</strong> 2 Corinthians 5:7</p>
+                    <p class="card-text">For we walk by faith, not by sight.</p>
+                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#devotionalModal">Read Full</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#devotionalsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#devotionalsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="modal-body">
-            The Second Exodus refers to Christ’s deliverance of His Bride from the bondage of denominational systems and legalism, calling her back to the pure Word of God. Just as Moses led the Israelites out of Egypt, Jesus Christ leads His Bride into spiritual freedom.
+        </div>
+  
+        <div class="col-lg-6 mb-4">
+          <!-- Sermons Carousel -->
+          <h3 class="text-center mb-4">Sermons</h3>
+          <div id="sermonsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Sermon 1 -->
+              <div class="carousel-item active">
+                <div class="card h-100 p-3 text-center">
+                  <div class="ratio ratio-16x9 rounded mb-3">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Sermon Video" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">"Walking in the Light"</h5>
+                    <p class="card-text">Explore the profound message of walking in the light of Christ.</p>
+                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#sermonModal">Watch Full</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Sermon 2 -->
+              <div class="carousel-item">
+                <div class="card h-100 p-3 text-center">
+                  <div class="ratio ratio-16x9 rounded mb-3">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Sermon Video" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">"The Path of Righteousness"</h5>
+                    <p class="card-text">Delve into the message about walking in the righteousness of God.</p>
+                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#sermonModal">Watch Full</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#sermonsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sermonsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Third Exodus Modal -->
-    <div class="modal fade" id="thirdExodusModal" tabindex="-1" aria-labelledby="thirdExodusModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="thirdExodusModalLabel">The Third Exodus</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            The Third Exodus is the calling of the Bride of Christ out of worldly systems and into the fullness of the revealed Word. It signifies the spiritual journey of believers preparing for the Rapture through the End Time Message.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Rapture Modal -->
-    <div class="modal fade" id="raptureModal" tabindex="-1" aria-labelledby="raptureModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="raptureModalLabel">The Rapture</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            The Rapture is the catching away of the Bride of Christ to meet the Lord in the air. This event fulfills the promise of 1 Thessalonians 4:16-17 and signifies the culmination of the Bride’s journey in the End Time Message.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Weekly Services Section -->
-    <section id="services" class="py-5 position-relative bg-light section">
-      <div class="container">
-        <h2 class="text-center mb-5">Weekly Services</h2>
-
-        <!-- Weekly Services Grid -->
-        <div class="row text-center g-4">
-          <!-- Sunday Worship -->
-          <div class="col-lg-4 hover-3d">
-            <div class="service-card p-4 shadow rounded">
-              <div class="service-icon mb-3">
-                <i class="bi bi-sun-fill text-warning" style="font-size: 2rem;"></i>
-              </div>
-              <h5 class="mb-3">Sunday Worship</h5>
-              <p><strong>Sunday School:</strong> 10:00 AM - 11:00 AM</p>
-              <p><strong>Main Service:</strong> 11:00 AM - 1:00 PM</p>
-            </div>
-          </div>
-
-          <!-- Bible Study -->
-          <div class="col-lg-4 hover-3d">
-            <div class="service-card p-4 shadow rounded">
-              <div class="service-icon mb-3">
-                <i class="bi bi-book-fill text-primary" style="font-size: 2rem;"></i>
-              </div>
-              <h5 class="mb-3">Bible Study</h5>
-              <p>Wednesday | 8:00 PM - 10:00 PM</p>
-            </div>
-          </div>
-
-          <!-- Prayer Meeting -->
-          <div class="col-lg-4 hover-3d">
-            <div class="service-card p-4 shadow rounded">
-              <div class="service-icon mb-3">
-                <span style="font-size: 2rem;">🙏</span> <!-- Praying hands emoji -->
-              </div>
-              <h5 class="mb-3">Prayer Meeting</h5>
-              <p>Friday | 7:00 PM - 8:30 PM</p>
-            </div>
-          </div>
-        </div>
-
-        <hr class="my-5">
-
-        <!-- Upcoming Events -->
-        <h3 class="text-center mb-4">Upcoming Events</h3>
-        <p class="text-center mb-5">Don't miss these special moments of worship and fellowship.</p>
-        <div class="row g-4 justify-content-center">
-          <!-- Youth Fellowship Night -->
-          <div class="col-lg-4 hover-3d">
-            <div class="event-card card h-100 shadow">
-              <img src="IMG/dnk-photo-PdXqqLO6jtw-unsplash.jpg" class="card-img-top rounded-top" alt="Youth Fellowship Night" loading="lazy">
-              <div class="card-body">
-                <h5 class="card-title">Youth Fellowship Night</h5>
-                <p class="card-text"><strong>Date:</strong> Saturday, March 15, 2024</p>
-                <p class="card-text"><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
-                <p>A special evening for young believers to worship, connect, and grow.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Easter Sunday Celebration -->
-          <div class="col-lg-4 hover-3d">
-            <div class="event-card card h-100 shadow">
-              <img src="IMG/neal-e-johnson-oQC81OHcl4Q-unsplash.jpg" class="card-img-top rounded-top" alt="Easter Sunday Celebration" loading="lazy">
-              <div class="card-body">
-                <h5 class="card-title">Easter Sunday Celebration</h5>
-                <p class="card-text"><strong>Date:</strong> Sunday, March 31, 2024</p>
-                <p class="card-text"><strong>Time:</strong> 10:00 AM - 1:00 PM</p>
-                <p>Celebrate the resurrection of Christ with joyful worship and fellowship.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Cross-Over Night -->
-          <div class="col-lg-4 hover-3d">
-            <div class="event-card card h-100 shadow">
-              <img src="IMG/priscilla-du-preez-A5ORfo8CM1E-unsplash.jpg" class="card-img-top rounded-top" alt="Cross-Over Night" loading="lazy">
-              <div class="card-body">
-                <h5 class="card-title">Cross-Over Night</h5>
-                <p class="card-text"><strong>Date:</strong> Tuesday, December 31, 2024</p>
-                <p class="card-text"><strong>Time:</strong> 10:00 PM - 12:30 AM</p>
-                <p>Welcome the New Year with thanksgiving, worship, and prayers.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Devotionals and Sermons Section -->
-    <section id="devotionals" class="py-5 position-relative bg-light section">
-      <div class="container">
-        <h2 class="text-center mb-5">Devotionals & Sermons</h2>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <!-- Devotionals Carousel -->
-            <h3 class="text-center mb-4">Devotionals</h3>
-            <div id="devotionalsCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <!-- Devotional 1 -->
-                <div class="carousel-item active">
-                  <div class="card h-100 p-3 text-center">
-                    <img src="IMG/dnk-photo-PdXqqLO6jtw-unsplash.jpg" class="card-img-top rounded" alt="The Power of Faith" loading="lazy">
-                    <div class="card-body">
-                      <h5 class="card-title">"The Power of Faith"</h5>
-                      <p><strong>Verse:</strong> Hebrews 11:1</p>
-                      <p class="card-text">Faith is the substance of things hoped for, the evidence of things not seen.</p>
-                      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#devotionalModal">Read Full</button>
-                    </div>
-                  </div>
+  </section>
+  
+  <!-- Contact Us Section -->
+  <section id="contact" class="py-5 section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Contact Us</h2>
+      <div class="row">
+        <!-- Contact Details -->
+        <div class="col-lg-4 mb-4">
+          <div class="p-4 bg-white shadow rounded h-100">
+            <h4 class="mb-4">Get in Touch</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-envelope-fill text-primary fs-4 me-3"></i>
+                <div>
+                  <strong>Email:</strong>
+                  <p class="mb-0">info@lcalondon.com</p>
                 </div>
-                <!-- Devotional 2 -->
-                <div class="carousel-item">
-                  <div class="card h-100 p-3 text-center">
-                    <img src="IMG/neal-e-johnson-oQC81OHcl4Q-unsplash.jpg" class="card-img-top rounded" alt="Walking in Faith" loading="lazy">
-                    <div class="card-body">
-                      <h5 class="card-title">"Walking in Faith"</h5>
-                      <p><strong>Verse:</strong> 2 Corinthians 5:7</p>
-                      <p class="card-text">For we walk by faith, not by sight.</p>
-                      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#devotionalModal">Read Full</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#devotionalsCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#devotionalsCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <!-- Sermons Carousel -->
-            <h3 class="text-center mb-4">Sermons</h3>
-            <div id="sermonsCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <!-- Sermon 1 -->
-                <div class="carousel-item active">
-                  <div class="card h-100 p-3 text-center">
-                    <div class="ratio ratio-16x9 rounded">
-                      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Walking in the Light Sermon Video" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">"Walking in the Light"</h5>
-                      <p class="card-text">Explore the profound message of walking in the light of Christ.</p>
-                      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#sermonModal">Watch Full</button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Sermon 2 -->
-                <div class="carousel-item">
-                  <div class="card h-100 p-3 text-center">
-                    <div class="ratio ratio-16x9 rounded">
-                      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="The Path of Righteousness Sermon Video" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">"The Path of Righteousness"</h5>
-                      <p class="card-text">Delve into the message about walking in the righteousness of God.</p>
-                      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#sermonModal">Watch Full</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#sermonsCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#sermonsCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Us Section -->
-    <section id="contact" class="py-5 position-relative bg-light section">
-      <div class="container">
-        <h2 class="text-center mb-5">Contact Us</h2>
-        <div class="row">
-          <!-- Contact Details -->
-          <div class="col-lg-4 mb-4">
-            <div class="p-4 bg-white shadow rounded h-100">
-              <h4 class="mb-4">Get in Touch</h4>
-              <ul class="list-unstyled">
-                <li class="mb-3 d-flex align-items-center">
-                  <i class="bi bi-envelope-fill text-primary fs-4 me-3" aria-hidden="true"></i>
-                  <div>
-                    <strong>Email:</strong>
-                    <p class="mb-0">info@lcalondon.com</p>
-                  </div>
-                </li>
-                <li class="mb-3 d-flex align-items-center">
-                  <i class="bi bi-geo-alt-fill text-danger fs-4 me-3" aria-hidden="true"></i>
-                  <div>
-                    <strong>Address:</strong>
-                    <p class="mb-0">123 Faith Lane, London, UK</p>
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <i class="bi bi-telephone-fill text-success fs-4 me-3" aria-hidden="true"></i>
-                  <div>
-                    <strong>Phone:</strong>
-                    <p class="mb-0">+44 20 7946 0958</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Forms and Tabs -->
-          <div class="col-lg-8">
-            <ul class="nav nav-tabs mb-4" id="contactTabs" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-form" type="button" role="tab" aria-controls="contact-form" aria-selected="true">Contact Us</button>
               </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="testimony-tab" data-bs-toggle="tab" data-bs-target="#testimony-form" type="button" role="tab" aria-controls="testimony-form" aria-selected="false">Testimony</button>
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-geo-alt-fill text-danger fs-4 me-3"></i>
+                <div>
+                  <strong>Address:</strong>
+                  <p class="mb-0">123 Faith Lane, London, UK</p>
+                </div>
               </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="prayer-tab" data-bs-toggle="tab" data-bs-target="#prayer-form" type="button" role="tab" aria-controls="prayer-form" aria-selected="false">Prayer Request</button>
+              <li class="d-flex align-items-center">
+                <i class="bi bi-telephone-fill text-success fs-4 me-3"></i>
+                <div>
+                  <strong>Phone:</strong>
+                  <p class="mb-0">+44 20 7946 0958</p>
+                </div>
               </li>
             </ul>
-
-            <div class="tab-content" id="contactTabsContent">
-              <!-- Contact Us Form -->
-              <div class="tab-pane fade show active" id="contact-form" role="tabpanel" aria-labelledby="contact-tab">
-                <div class="row g-4">
-                  <div class="col-lg-6">
-                    <form>
-                      <div class="mb-3">
-                        <label for="contact-name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="contact-name" placeholder="Your Name" required>
-                      </div>
-                      <div class="mb-3">
-                        <label for="contact-email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="contact-email" placeholder="Your Email" required>
-                      </div>
-                      <div class="mb-3">
-                        <label for="contact-message" class="form-label">Message</label>
-                        <textarea class="form-control" id="contact-message" rows="4" placeholder="Your Message" required></textarea>
-                      </div>
+          </div>
+        </div>
+        
+        <!-- Forms and Tabs -->
+        <div class="col-lg-8">
+          <ul class="nav nav-tabs mb-4" id="contactTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-form" type="button" role="tab" aria-controls="contact-form" aria-selected="true">Contact Us</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="testimony-tab" data-bs-toggle="tab" data-bs-target="#testimony-form" type="button" role="tab" aria-controls="testimony-form" aria-selected="false">Testimony</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="prayer-tab" data-bs-toggle="tab" data-bs-target="#prayer-form" type="button" role="tab" aria-controls="prayer-form" aria-selected="false">Prayer Request</button>
+            </li>
+          </ul>
+  
+          <div class="tab-content" id="contactTabsContent">
+            <!-- Contact Us Form -->
+            <div class="tab-pane fade show active" id="contact-form" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="row g-4">
+                <div class="col-12">
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="contact-name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="contact-name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="contact-email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="contact-email" placeholder="Your Email" required>
+                    </div>
+                    <div class="col-12">
+                      <label for="contact-message" class="form-label">Message</label>
+                      <textarea class="form-control" id="contact-message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="col-12 text-center">
                       <button type="submit" class="btn btn-primary">Send</button>
-                    </form>
-                  </div>
-                  <div class="col-lg-6">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.662098452594!2d-0.1276473844356849!3d51.507351779634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b37858d3601%3A0x8c5e5e5b4ddddd35!2sLondon%20Eye!5e0!3m2!1sen!2suk!4v1678731493753!5m2!1sen!2suk"
-                      width="100%"
-                      height="300"
-                      style="border:0;"
-                      allowfullscreen=""
-                      loading="lazy"
-                      title="Google Maps Location"
-                    ></iframe>
-                  </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- Google Map Sub-Section -->
+                <div class="col-12 mt-5">
+                  <h4 class="mb-3">Find Us</h4>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.662098452594!2d-0.1276473844356849!3d51.507351779634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b37858d3601%3A0x8c5e5e5b4ddddd35!2sLondon%20Eye!5e0!3m2!1sen!2suk!4v1678731493753!5m2!1sen!2suk"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
                 </div>
               </div>
-
-              <!-- Testimony Form -->
-              <div class="tab-pane fade" id="testimony-form" role="tabpanel" aria-labelledby="testimony-tab">
-                <form>
-                  <div class="mb-3">
-                    <label for="testimony-name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="testimony-name" placeholder="Your Name" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="testimony-title" class="form-label">Testimony Title</label>
-                    <input type="text" class="form-control" id="testimony-title" placeholder="Testimony Title" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="testimony-content" class="form-label">Your Testimony</label>
-                    <textarea class="form-control" id="testimony-content" rows="4" placeholder="Share your testimony" required></textarea>
-                  </div>
+            </div>
+  
+            <!-- Testimony Form -->
+            <div class="tab-pane fade" id="testimony-form" role="tabpanel" aria-labelledby="testimony-tab">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="testimony-name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="testimony-name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="testimony-email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                  <input type="email" class="form-control" id="testimony-email" placeholder="Your Email">
+                </div>
+                <div class="col-md-6">
+                  <label for="testimony-phone" class="form-label">Phone Number <span class="text-muted">(Optional)</span></label>
+                  <input type="tel" class="form-control" id="testimony-phone" placeholder="Your Phone Number">
+                </div>
+                <div class="col-md-6">
+                  <label for="testimony-title" class="form-label">Testimony Title</label>
+                  <input type="text" class="form-control" id="testimony-title" placeholder="Testimony Title" required>
+                </div>
+                <div class="col-12">
+                  <label for="testimony-content" class="form-label">Your Testimony</label>
+                  <textarea class="form-control" id="testimony-content" rows="4" placeholder="Share your testimony" required></textarea>
+                </div>
+                <div class="col-12 text-center">
                   <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-              </div>
-
-              <!-- Prayer Request Form -->
-              <div class="tab-pane fade" id="prayer-form" role="tabpanel" aria-labelledby="prayer-tab">
-                <form>
-                  <div class="mb-3">
-                    <label for="prayer-name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="prayer-name" placeholder="Your Name" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="prayer-title" class="form-label">Prayer Title</label>
-                    <input type="text" class="form-control" id="prayer-title" placeholder="Prayer Title" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="prayer-content" class="form-label">Prayer Request</label>
-                    <textarea class="form-control" id="prayer-content" rows="4" placeholder="Share your prayer request" required></textarea>
-                  </div>
+                </div>
+              </form>
+            </div>
+  
+            <!-- Prayer Request Form -->
+            <div class="tab-pane fade" id="prayer-form" role="tabpanel" aria-labelledby="prayer-tab">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="prayer-name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="prayer-name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="prayer-email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                  <input type="email" class="form-control" id="prayer-email" placeholder="Your Email">
+                </div>
+                <div class="col-md-6">
+                  <label for="prayer-phone" class="form-label">Phone Number <span class="text-muted">(Optional)</span></label>
+                  <input type="tel" class="form-control" id="prayer-phone" placeholder="Your Phone Number">
+                </div>
+                <div class="col-md-6">
+                  <label for="prayer-title" class="form-label">Prayer Title</label>
+                  <input type="text" class="form-control" id="prayer-title" placeholder="Prayer Title" required>
+                </div>
+                <div class="col-12">
+                  <label for="prayer-content" class="form-label">Prayer Request</label>
+                  <textarea class="form-control" id="prayer-content" rows="4" placeholder="Share your prayer request" required></textarea>
+                </div>
+                <div class="col-12 text-center">
                   <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-5 bg-light section">
-      <div class="container text-center">
-        <h2 class="mb-4">Gallery</h2>
-        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
-          <!-- Carousel Indicators -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-
-          <!-- Carousel Items -->
-          <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="d-flex justify-content-center">
-                <img src="IMG/dnk-photo-PdXqqLO6jtw-unsplash.jpg" class="d-block img-thumbnail" alt="Gallery Image 1" loading="lazy">
-                <img src="IMG/Eef4bRyXsAEoBnr.jpg" class="d-block img-thumbnail mx-3" alt="Gallery Image 2" loading="lazy">
-                <img src="IMG/images.jpeg" class="d-block img-thumbnail" alt="Gallery Image 3" loading="lazy">
-              </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-                <img src="IMG/neal-e-johnson-oQC81OHcl4Q-unsplash.jpg" class="d-block img-thumbnail" alt="Gallery Image 4" loading="lazy">
-                <img src="IMG/priscilla-du-preez-A5ORfo8CM1E-unsplash.jpg" class="d-block img-thumbnail mx-3" alt="Gallery Image 5" loading="lazy">
-                <img src="IMG/samantha-sophia-NaWKMlp3tVs-unsplash.jpg" class="d-block img-thumbnail" alt="Gallery Image 6" loading="lazy">
-              </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-                <img src="IMG/dnk-photo-PdXqqLO6jtw-unsplash.jpg" class="d-block img-thumbnail" alt="Gallery Image 7" loading="lazy">
-                <img src="IMG/Eef4bRyXsAEoBnr.jpg" class="d-block img-thumbnail mx-3" alt="Gallery Image 8" loading="lazy">
-                <img src="IMG/images.jpeg" class="d-block img-thumbnail" alt="Gallery Image 9" loading="lazy">
-              </div>
-            </div>
-          </div>
-
-          <!-- Carousel Controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+    </div>
+  </section>
+  
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5 section bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Gallery</h2>
+      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+  
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center flex-wrap">
+              <img src="IMG/dnk-photo-PdXqqLO6jtw-unsplash.jpg" class="d-block img-thumbnail m-2 gallery-img" alt="Gallery Image 1" loading="lazy">
+              <img src="IMG/Eef4bRyXsAEoBnr.jpg" class="d-block img-thumbnail m-2 gallery-img" alt="Gallery Image 2" loading="lazy">
+              <img src="IMG/images.jpeg" class="d-block img-thumbnail m-2 gallery-img" alt="Gallery Image 3" loading="lazy">
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center flex-wrap">
+              <img src="IMG/neal-e-johnson-oQC81OHcl4Q-unsplash.jpg" class="d-block img-thumbnail m-2 gallery-img" alt="Gallery Image 4" loading="lazy">
+              <img src="IMG/priscilla-du-preez-A5ORfo8CM1E-unsplash.jpg" class="d-block img-thumbnail m-2 gallery-img" alt="Gallery Image 5" loading="lazy">
+              <img src="IMG/samantha-sophia-NaWKMlp3tVs-unsplash.jpg" class="d-block img-thumbnail m-2 gallery-img" alt="Gallery Image 6" loading="lazy">
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center flex-wrap">
+              <img src="IMG/dnk-photo-PdXqqLO6jtw-unsplash.jpg" class="d-block img-thumbnail m-2 gallery-img" alt="Gallery Image 7" loading="lazy">
+              <img src="IMG/Eef4bRyXsAEoBnr.jpg" class="d-block img-thumbnail m-2 gallery-img" alt="Gallery Image 8" loading="lazy">
+              <img src="IMG/images.jpeg" class="d-block img-thumbnail m-2 gallery-img" alt="Gallery Image 9" loading="lazy">
+            </div>
+          </div>
+        </div>
+  
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </section>
-  </main>
-
+    </div>
+  </section>
+  
   <!-- Footer -->
   <footer class="bg-dark text-light py-5">
     <div class="container">
@@ -597,7 +617,7 @@
             Local Christian Assembly London is dedicated to spreading the Word of God and the End Time Message. Join us in fellowship and worship as we prepare for His coming.
           </p>
         </div>
-
+  
         <!-- Quick Links -->
         <div class="col-lg-4">
           <h5>Quick Links</h5>
@@ -607,9 +627,10 @@
             <li><a href="#services" class="text-light text-decoration-none">Weekly Services</a></li>
             <li><a href="#devotionals" class="text-light text-decoration-none">Devotionals & Sermons</a></li>
             <li><a href="#contact" class="text-light text-decoration-none">Contact Us</a></li>
+            <li><a href="#gallery" class="text-light text-decoration-none">Gallery</a></li>
           </ul>
         </div>
-
+  
         <!-- Social Media Links -->
         <div class="col-lg-4">
           <h5>Follow Us</h5>
@@ -621,9 +642,9 @@
           </div>
         </div>
       </div>
-
+  
       <hr class="text-light my-4">
-
+  
       <!-- Bottom Footer -->
       <div class="text-center small">
         <p class="mb-0">© 2024 Local Christian Assembly London. All Rights Reserved.</p>
@@ -632,8 +653,8 @@
         </p>
       </div>
     </div>
-  </footer>
-
+  </footer>  
+  
   <!-- Modal for Devotionals -->
   <div class="modal fade" id="devotionalModal" tabindex="-1" aria-labelledby="devotionalModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -644,13 +665,13 @@
         </div>
         <div class="modal-body">
           <p class="text-muted" id="devotionalVerse"></p>
-          <img id="devotionalImage" src="#" alt="Devotional Image" class="img-fluid mb-3">
+          <img id="devotionalImage" src="#" alt="Devotional" class="img-fluid mb-3">
           <p id="devotionalFull"></p>
         </div>
       </div>
     </div>
   </div>
-
+  
   <!-- Modal for Sermons -->
   <div class="modal fade" id="sermonModal" tabindex="-1" aria-labelledby="sermonModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -669,12 +690,12 @@
       </div>
     </div>
   </div>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+  
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
   <!-- Main JS -->
   <script src="JS/main.js"></script>
-
+  
 </body>
 </html>

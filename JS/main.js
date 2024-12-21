@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const contentContainer = document.getElementById('content-container');
     const typedQuotesElement = document.getElementById('typed-quotes');
     const navbar = document.querySelector('.navbar');
+    const galleryImages = document.querySelectorAll('.gallery-img');
+    let activeGalleryImage = null;
 
     // Quotes to display
     const quotes = [
@@ -115,11 +117,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event Listener for Devotional Modal
     devotionalModal.addEventListener('show.bs.modal', function (event) {
       const button = event.relatedTarget;
-      const carouselItem = button.closest('.carousel-item');
-      const title = carouselItem.querySelector('.card-title').textContent;
-      const verse = carouselItem.querySelector('.card-text strong').nextSibling.textContent.trim();
-      const imageSrc = carouselItem.querySelector('img').src;
-      const fullText = carouselItem.querySelector('.card-text').nextElementSibling ? carouselItem.querySelector('.card-text').nextElementSibling.textContent.trim() : '';
+      const card = button.closest('.carousel-item').querySelector('.card');
+      const title = card.querySelector('.card-title').textContent;
+      const verse = card.querySelector('.card-text strong').nextSibling.textContent.trim();
+      const imageSrc = card.querySelector('img').src;
+      const fullText = card.querySelector('.card-text').nextElementSibling.textContent.trim();
 
       const modalTitle = devotionalModal.querySelector('.modal-title');
       const modalVerse = devotionalModal.querySelector('#devotionalVerse');
@@ -152,11 +154,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event Listener for Sermon Modal
     sermonModal.addEventListener('show.bs.modal', function (event) {
       const button = event.relatedTarget;
-      const carouselItem = button.closest('.carousel-item');
-      const title = carouselItem.querySelector('.card-title').textContent;
-      const videoSrc = carouselItem.querySelector('iframe').src;
-      const description = carouselItem.querySelector('.card-text').textContent;
-      const youtubeLink = carouselItem.querySelector('iframe').src;
+      const card = button.closest('.carousel-item').querySelector('.card');
+      const title = card.querySelector('.card-title').textContent;
+      const videoSrc = card.querySelector('iframe').src;
+      const description = card.querySelector('.card-text').textContent;
+      const youtubeLink = card.querySelector('iframe').src;
 
       const modalTitle = sermonModal.querySelector('.modal-title');
       const modalVideo = sermonModal.querySelector('#sermonVideo');
@@ -182,5 +184,35 @@ document.addEventListener('DOMContentLoaded', function () {
       sermonModal.querySelector('#sermonVideo').src = '';
       sermonModal.querySelector('#sermonDescription').textContent = '';
       sermonModal.querySelector('#sermonYouTubeLink').href = '#';
+    });
+
+    // Lightbox Feature for Gallery Images
+    const lightboxModal = document.createElement('div');
+    lightboxModal.classList.add('modal', 'fade');
+    lightboxModal.id = 'lightboxModal';
+    lightboxModal.tabIndex = -1;
+    lightboxModal.setAttribute('aria-hidden', 'true');
+    lightboxModal.innerHTML = `
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="" class="img-fluid rounded" alt="Gallery Image">
+            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(lightboxModal);
+    const lbModal = new bootstrap.Modal(document.getElementById('lightboxModal'), {
+      keyboard: true
+    });
+    const lbImage = lightboxModal.querySelector('img');
+
+    galleryImages.forEach(img => {
+      img.addEventListener('click', () => {
+        lbImage.src = img.src;
+        lbImage.alt = img.alt;
+        lbModal.show();
+      });
     });
 });

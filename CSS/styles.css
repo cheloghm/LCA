@@ -91,7 +91,7 @@ a:hover {
     z-index: 1;
 }
 
-#welcome-text-container {
+.hero-content {
     z-index: 2;
     text-align: center;
 }
@@ -146,57 +146,217 @@ a:hover {
     perspective: 1000px;
 }
 
-.hover-3d:hover .service-card, 
-.hover-3d:hover .event-card, 
+.hover-3d .service-card,
+.hover-3d .event-card,
+.hover-3d .card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.hover-3d:hover .service-card,
+.hover-3d:hover .event-card,
 .hover-3d:hover .card {
-    transform: rotateY(10deg) rotateX(10deg);
-    transition: transform 0.5s ease;
+    transform: rotateY(10deg) rotateX(10deg) scale(1.05);
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
-/* Cards and Services */
-.card, .service-card, .event-card {
+/* Service Cards */
+.service-card {
+    background: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
 
-.card:hover, .service-card:hover, .event-card:hover {
+.service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 25px rgba(0,0,0,0.3);
 }
 
-/* Service Icons */
 .service-icon {
     margin-bottom: 1rem;
 }
 
-/* Buttons */
-.btn-primary {
-    background-color: var(--primary-color);
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+/* Event Cards */
+.event-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
 
-.btn-primary:hover {
-    background-color: var(--accent-color);
-    transform: translateY(-2px);
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
 }
 
-.btn-secondary {
-    background-color: var(--secondary-color);
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+.event-card img {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
 }
 
-.btn-secondary:hover {
-    background-color: var(--accent-color);
-    transform: translateY(-2px);
+.event-card .card-body {
+    background: #f9f9f9;
+    border-top: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 0 0 8px 8px;
 }
 
-/* Footer */
-footer {
-    background-color: var(--dark-color);
+/* Fixed Gallery Images */
+.gallery-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Curious Section */
+.curious-section h3 {
+    font-size: 1.75rem;
+    color: #333;
+}
+
+.curious-section .card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curious-section .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Weekly Services Section */
+#services h2, #services h3 {
+    color: #333;
+}
+
+#services .row.gx-4 {
+    margin-top: 2rem;
+}
+
+/* Devotionals and Sermons Section */
+#devotionals h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.carousel .card {
+    height: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.carousel .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.carousel .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carousel .ratio {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-body {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Contact Us Section */
+#contact h4 {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+#contact .nav-tabs .nav-link {
+    font-size: 1rem;
+    color: #555;
+    border: 1px solid transparent;
+}
+
+#contact .nav-tabs .nav-link.active {
     color: #fff;
-    padding: 4rem 0;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+#contact .tab-content form .form-control {
+    border-radius: 4px;
+}
+
+#contact .tab-content button {
+    margin-top: 1rem;
+}
+
+#contact iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact .p-4 {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* Gallery Section Styling */
+#gallery img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* Ensures the image scales nicely */
+    border-radius: 10px; /* Adds a subtle rounded corner effect */
+}
+
+.carousel-inner {
+    overflow: hidden;
+}
+
+.carousel-item {
+    transition: transform 1.5s ease-in-out; /* Smooth transition between slides */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Subtle background for controls */
+    border-radius: 50%;
+}  
+
+/* Footer Styles */
+footer {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 footer a {
@@ -233,36 +393,46 @@ footer hr {
     transform: translateY(0);
 }
 
-/* Additional Enhancements */
-.bg-overlay {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    backdrop-filter: blur(5px); /* Adds blur effect to the background */
-    color: #fff; /* Ensures text is white for contrast */
-    text-align: center;
-    display: inline-block;
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .gallery-img {
+        width: 300px;
+        height: 300px;
+    }
 }
 
-.d-none {
-    display: none !important;
+@media (max-width: 992px) {
+    .gallery-img {
+        width: 300px;
+        height: 300px;
+    }
 }
 
-.hero-section .container {
-    position: relative;
-    z-index: 2;
+@media (max-width: 768px) {
+    #welcome-text {
+        font-size: 2.5rem;
+    }
+
+    #scripture-text {
+        font-size: 1.5rem;
+    }
+
+    #typed-quotes {
+        font-size: 1rem;
+    }
+
+    .gallery-img {
+        width: 100%;
+        height: auto;
+    }
 }
 
-.ratio iframe {
-    border: none;
-    border-radius: 10px;
+/* Optional: Lightbox Effect for Gallery Images */
+.gallery-img {
+    cursor: pointer;
 }
 
-/* Modal Enhancements */
-.modal-content {
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.modal-body {
-    font-size: 1rem;
-    line-height: 1.8;
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
