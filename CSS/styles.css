@@ -1,0 +1,408 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #777;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: #111;
+  }
+
+  /* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Transparent black */
+    backdrop-filter: blur(10px); /* Adds the blur effect */
+    color: #fff;
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: gold !important;
+  }  
+  
+  /* Hero Section */
+  .hero-section {
+    min-height: 100vh;
+    background: url('../IMG/samantha-sophia-NaWKMlp3tVs-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(8px); /* Initial blur effect */
+    transition: filter 1.5s ease;
+    position: relative;
+  }
+  
+  /* Welcome Text Container (Clear Above Blur) */
+#welcome-text-container {
+    z-index: 10; /* Ensures it's above the blur effect */
+    position: relative;
+  }
+
+  /* Content within the hero section */
+  #content-container {
+    transition: opacity 1.5s ease;
+  }
+  
+  #scripture-text {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+  }
+  
+  #typed-quotes {
+    font-size: 1.5rem;
+    color: #ddd;
+  }
+
+  /* Blurry/Opacity Background for Text */
+.bg-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    backdrop-filter: blur(5px); /* Adds blur effect to the background */
+    color: #fff; /* Ensures text is white for contrast */
+    text-align: center;
+    display: inline-block;
+  }  
+  
+  .d-none {
+    display: none !important;
+  }
+  
+  .hero-ready {
+    filter: blur(0); /* Remove blur effect */
+  }
+  
+  /* Typing effect cursor */
+  .typed-cursor {
+    font-weight: bold;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .hero-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  .hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.4);
+    z-index:1;
+  }
+  
+  .navbar-fixed-top {
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:1030;
+  }
+  
+  .card-img-top, .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Tabs styling */
+  .nav-tabs .nav-link.active {
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+  }
+
+  /* General Styling */
+body {
+    font-family: 'Lato', sans-serif;
+    color: #777;
+}
+.gradient-text {
+    background: linear-gradient(90deg, gold, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 3D Hover Effects */
+.hover-3d:hover {
+    transform: scale(1.05) rotateX(10deg) rotateY(10deg);
+    transition: transform 0.5s ease;
+}
+  
+/* About Us Section */
+#about {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 3rem;
+}
+
+#about .col-lg-6 {
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Images */
+#about .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: brightness(50%);
+    border-right: 2px solid #fff; /* Separate the background images */
+}
+
+/* Overlay for Text Readability */
+#about .bg-overlay {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Curious Section */
+.curious-section h3 {
+    font-size: 1.75rem;
+    color: #333;
+}
+
+.curious-section .card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curious-section .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Weekly Services Section */
+#services {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 3rem;
+  }
+  
+  #services h2, #services h3 {
+    color: #333;
+  }
+  
+  .service-card {
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-icon {
+    margin-bottom: 1rem;
+  }
+  
+  .event-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-card img {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .event-card .card-body {
+    background: #f9f9f9;
+    border-top: 4px solid #007bff;
+    padding: 1.5rem;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  #services .row.g-4 {
+    margin-top: 2rem;
+  }
+  
+  /* Devotionals and Sermons Section */
+#devotionals {
+    background-color: #f8f9fa;
+  }
+  
+  #devotionals h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .carousel .card {
+    height: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .carousel .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+  
+  .carousel .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .carousel .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .carousel .ratio {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .modal-content {
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-body {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  
+  /* Contact Us Section */
+#contact {
+    background-color: #f8f9fa;
+  }
+  
+  #contact h4 {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  #contact .nav-tabs .nav-link {
+    font-size: 1rem;
+    color: #555;
+    border: 1px solid transparent;
+  }
+  
+  #contact .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+  }
+  
+  #contact .tab-content form .form-control {
+    border-radius: 4px;
+  }
+  
+  #contact .tab-content button {
+    margin-top: 1rem;
+  }
+  
+  #contact iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact .p-4 {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  /* Contact Details */
+.list-unstyled li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .list-unstyled li i {
+    min-width: 40px;
+    text-align: center;
+  }
+  
+  .list-unstyled li p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  /* Gallery Section Styling */
+#gallery img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* Ensures the image scales nicely */
+    border-radius: 10px; /* Adds a subtle rounded corner effect */
+  }
+  
+  .carousel-inner {
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    transition: transform 1.5s ease-in-out; /* Smooth transition between slides */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Subtle background for controls */
+    border-radius: 50%;
+  }  
+  
+  /* Footer Styles */
+footer {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  footer h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  footer a {
+    color: #bbb;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  footer .bi {
+    transition: color 0.3s ease;
+  }
+  
+  footer .bi:hover {
+    color: #007bff;
+  }
+  
+  footer .small {
+    font-size: 0.85rem;
+  }
+  
+  footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
